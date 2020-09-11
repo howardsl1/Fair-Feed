@@ -27,19 +27,19 @@ class ViewController: UIViewController {
     }
     
     
-    //Cust Write Review
-    @IBOutlet weak var BenterResp: UITextField!
-    @IBOutlet weak var BTview: UITextView!
+    //Bus Write Review
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     @IBAction func setText(_ sender: UIButton) {
-        let mtext = BenterResp.text
-        BTview.text = mtext
+        let mtext = textField.text
+        textView.text = mtext
     }
     @IBAction func appendText(_ sender: UIButton) {
-        let mtext = BenterResp.text
-        BTview.text += mtext ?? " "
+        let mtext = textField.text ?? ""
+        textView.text += mtext
     }
     
-    
+   
     
     
     //viewDidLoad
@@ -76,9 +76,9 @@ class ViewController: UIViewController {
     }
     
     // ERROR when tapping away from business review keyboard
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         CustUlog.resignFirstResponder()
-    }
+    }*/
     
     @objc func dismissKeyboard() {
         view.endEditing(true)

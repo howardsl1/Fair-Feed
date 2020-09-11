@@ -190,71 +190,6 @@
             </objects>
             <point key="canvasLocation" x="4357.6000000000004" y="-868.51574212893559"/>
         </scene>
-        <!--Business Review-->
-        <scene sceneID="QCN-1R-5Xt">
-            <objects>
-                <viewController id="N1B-2I-YVA" userLabel="Business Review" customClass="ViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4pp-ac-h1G">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Customer!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhG-CE-ehb">
-                                <rect key="frame" x="16" y="130" width="343" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter review here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nKD-Zs-OxV">
-                                <rect key="frame" x="27" y="401" width="320" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vBa-SX-4aQ">
-                                <rect key="frame" x="67" y="192" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-h9-g3O">
-                                <rect key="frame" x="27" y="471" width="111" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Set Text"/>
-                                <connections>
-                                    <action selector="setText:" destination="N1B-2I-YVA" eventType="touchUpInside" id="y46-ca-BoE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pix-fr-ybC">
-                                <rect key="frame" x="249" y="471" width="98" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Append Text"/>
-                                <connections>
-                                    <action selector="appendText:" destination="N1B-2I-YVA" eventType="touchUpInside" id="Fm9-wh-DZk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="U0J-XB-o3B"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="OfL-Bj-F3h"/>
-                    <connections>
-                        <outlet property="BTview" destination="vBa-SX-4aQ" id="tKg-w8-WsH"/>
-                        <outlet property="BenterResp" destination="nKD-Zs-OxV" id="U6O-tK-5Uk"/>
-                        <outlet property="CErev" destination="nKD-Zs-OxV" id="WI4-Vd-kWa"/>
-                        <outlet property="CText" destination="nKD-Zs-OxV" id="5VA-HX-Pgf"/>
-                        <outlet property="CTview" destination="vBa-SX-4aQ" id="PNS-Mm-pSU"/>
-                        <outlet property="setText" destination="EVr-h9-g3O" id="wHP-5J-TYg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z00-By-6Iw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3935" y="1011"/>
-        </scene>
         <!--Choose View-->
         <scene sceneID="qnr-TB-xb0">
             <objects>
@@ -390,7 +325,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
-                                    <segue destination="N1B-2I-YVA" kind="show" id="dVt-Zq-MgI"/>
+                                    <segue destination="N0L-h9-tqK" kind="show" id="MAW-Rr-oZy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -409,6 +344,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XM5-im-n1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2983.1999999999998" y="1010.6446776611695"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9C2-dS-X8S">
+            <objects>
+                <viewController id="N0L-h9-tqK" customClass="ViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYv-o4-mBc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OE1-5M-Wte">
+                                <rect key="frame" x="45" y="345" width="285" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Rn-M8-c7K">
+                                <rect key="frame" x="67" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUU-8u-VXn">
+                                <rect key="frame" x="62" y="446" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Set Text"/>
+                                <connections>
+                                    <action selector="setText:" destination="N0L-h9-tqK" eventType="touchUpInside" id="pZz-qJ-3CZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-j9-q0h">
+                                <rect key="frame" x="241" y="446" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Append Text"/>
+                                <connections>
+                                    <action selector="appendText:" destination="N0L-h9-tqK" eventType="touchUpInside" id="oHy-7p-3W0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="EZe-uc-bSv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lqQ-gh-Nyc"/>
+                    <connections>
+                        <outlet property="textField" destination="OE1-5M-Wte" id="TKo-fY-yA3"/>
+                        <outlet property="textView" destination="0Rn-M8-c7K" id="A4b-yb-PI6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbX-yM-NCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3884" y="1010.6446776611695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O4L-Gb-6IY">
