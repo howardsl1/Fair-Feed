@@ -13,10 +13,14 @@
 		E6C4F30624F5A15300806FDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C4F30424F5A15300806FDA /* Main.storyboard */; };
 		E6C4F30824F5A15500806FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C4F30724F5A15500806FDA /* Assets.xcassets */; };
 		E6C4F30B24F5A15500806FDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C4F30924F5A15500806FDA /* LaunchScreen.storyboard */; };
+		E6F603BE2520EB60006DF729 /* SharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F603BD2520EB60006DF729 /* SharedView.swift */; };
+		E6F603C02520EBCE006DF729 /* CustReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F603BF2520EBCE006DF729 /* CustReview.swift */; };
+		E6F603C22520F5A0006DF729 /* BusReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F603C12520F5A0006DF729 /* BusReview.swift */; };
+		E6F6052A253640D7006DF729 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6F60529253640D7006DF729 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E6C4F2FB24F5A15300806FDA /* Thingy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C4F2FB24F5A15300806FDA /* Fair Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fair Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4F2FE24F5A15300806FDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C4F30024F5A15300806FDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6C4F30224F5A15300806FDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		E6C4F30724F5A15500806FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C4F30A24F5A15500806FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6C4F30C24F5A15500806FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F603BD2520EB60006DF729 /* SharedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedView.swift; sourceTree = "<group>"; };
+		E6F603BF2520EBCE006DF729 /* CustReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustReview.swift; sourceTree = "<group>"; };
+		E6F603C12520F5A0006DF729 /* BusReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusReview.swift; sourceTree = "<group>"; };
+		E6F60529253640D7006DF729 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		E6C4F2FC24F5A15300806FDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6C4F2FB24F5A15300806FDA /* Thingy.app */,
+				E6C4F2FB24F5A15300806FDA /* Fair Feed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,9 +68,13 @@
 				E6C4F30024F5A15300806FDA /* SceneDelegate.swift */,
 				E6C4F30224F5A15300806FDA /* ViewController.swift */,
 				E6C4F30424F5A15300806FDA /* Main.storyboard */,
+				E6F603C12520F5A0006DF729 /* BusReview.swift */,
+				E6F603BF2520EBCE006DF729 /* CustReview.swift */,
+				E6F603BD2520EB60006DF729 /* SharedView.swift */,
 				E6C4F30724F5A15500806FDA /* Assets.xcassets */,
 				E6C4F30924F5A15500806FDA /* LaunchScreen.storyboard */,
 				E6C4F30C24F5A15500806FDA /* Info.plist */,
+				E6F60529253640D7006DF729 /* GoogleService-Info.plist */,
 			);
 			path = Thingy;
 			sourceTree = "<group>";
@@ -84,7 +96,7 @@
 			);
 			name = Thingy;
 			productName = Thingy;
-			productReference = E6C4F2FB24F5A15300806FDA /* Thingy.app */;
+			productReference = E6C4F2FB24F5A15300806FDA /* Fair Feed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C4F30B24F5A15500806FDA /* LaunchScreen.storyboard in Resources */,
+				E6F6052A253640D7006DF729 /* GoogleService-Info.plist in Resources */,
 				E6C4F30824F5A15500806FDA /* Assets.xcassets in Resources */,
 				E6C4F30624F5A15300806FDA /* Main.storyboard in Resources */,
 			);
@@ -139,7 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C4F30324F5A15300806FDA /* ViewController.swift in Sources */,
+				E6F603C02520EBCE006DF729 /* CustReview.swift in Sources */,
+				E6F603BE2520EB60006DF729 /* SharedView.swift in Sources */,
 				E6C4F2FF24F5A15300806FDA /* AppDelegate.swift in Sources */,
+				E6F603C22520F5A0006DF729 /* BusReview.swift in Sources */,
 				E6C4F30124F5A15300806FDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thingy.Thingy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fair Feed";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thingy.Thingy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fair Feed";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

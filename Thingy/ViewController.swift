@@ -28,33 +28,11 @@ class ViewController: UIViewController {
     
     
     //Bus Write Review
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var textView: UITextView!
-    @IBAction func setText(_ sender: UIButton) {
-        let mtext = textField.text
-        textView.text = mtext
-    }
-    @IBAction func appendText(_ sender: UIButton) {
-        let mtext = textField.text ?? ""
-        textView.text += mtext
-    }
-    
-   
-    
     
     //viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //CustUlog.delegate = self
-        //CustPlog.delegate = self
-        //CustUsign.delegate = self
-        //CustPsign.delegate = self
-        
-        //BusUlog.delegate = self
-        //BusPlog.delegate = self
-        //BusUsign.delegate = self
-        //BusPsign.delegate = self
+
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -75,10 +53,6 @@ class ViewController: UIViewController {
         
     }
     
-    // ERROR when tapping away from business review keyboard
-    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        CustUlog.resignFirstResponder()
-    }*/
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
@@ -99,12 +73,5 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
-/*extension ViewController : UITextFieldDelegate {
-    func textFieldShouldReturn(_ textfield: UITextField) -> Bool {
-        textfield.resignFirstResponder()
-        return true
-    }*/
     
 }
