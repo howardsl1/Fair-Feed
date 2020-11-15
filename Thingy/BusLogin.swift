@@ -1,26 +1,29 @@
 //
-//  BusReview.swift
+//  BusLogin.swift
 //  Thingy
 //
-//  Created by Sam Howard on 9/27/20.
+//  Created by Sam Howard on 10/25/20.
 //  Copyright © 2020 Sam Howard. All rights reserved.
 //
 
 import UIKit
 import RealmSwift
+class BusLogin: UIViewController {
 
-class BusReview: UIViewController {
-
-    @IBOutlet var response: UITextView!
-    @IBOutlet var cusReview: UITextView!
+    @IBOutlet var Ubuslogin: UITextField!
+    @IBOutlet var PWbuslogin: UITextField!
+    @IBOutlet var UbusSignup: UITextField!
+    @IBOutlet var PWbusSignup: UITextField!
+    
+    var bulog: String?
+    var bpwlog: String?
+    var busign: String?
+    var bpwsign: String?
+    
     let realm = try! Realm()
-    var bRev: String?
-    var bResp: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Realm.Configuration.defaultConfiguration.fileURL)
-       
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -54,18 +57,21 @@ class BusReview: UIViewController {
     }
     
     func save() {
-        let businessPost = Data2()
-        businessPost.businessResp = bResp!
-        businessPost.businessRev = bRev!
+        let businessAccountData = BusinessAccount()
+        businessAccountData.businessUserLog = bulog!
+        businessAccountData.businessPwLog = bpwlog!
+        businessAccountData.businessUserSign = busign!
+        businessAccountData.businessPwSign = bpwsign!
         realm.beginWrite()
-        realm.add(businessPost)
+        realm.add(businessAccountData)
         try! realm.commitWrite()
     }
     
-    @IBAction func postTapped(_ sender: UIButton) {
-        bResp = response.text
-        bRev = cusReview.text
+    @IBAction func enterPressed(_ sender: UIButton) {
+        bulog = Ubuslogin.text
+        bpwlog = PWbuslogin.text
+        busign = UbusSignup.text
+        bpwsign = PWbusSignup.text
         save()
     }
-    
 }

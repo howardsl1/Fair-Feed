@@ -26,9 +26,6 @@ class ViewController: UIViewController {
     @IBAction func enter(_ sender: UIButton) {
     }
     
-    
-    //Bus Write Review
-    
     //viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,31 +1,35 @@
 //
-//  BusReview.swift
+//  CusLogin.swift
 //  Thingy
 //
-//  Created by Sam Howard on 9/27/20.
+//  Created by Sam Howard on 10/25/20.
 //  Copyright © 2020 Sam Howard. All rights reserved.
 //
 
 import UIKit
 import RealmSwift
 
-class BusReview: UIViewController {
+class CusLogin: UIViewController {
 
-    @IBOutlet var response: UITextView!
-    @IBOutlet var cusReview: UITextView!
+    @IBOutlet var UcusLogin: UITextField!
+    @IBOutlet var PWcusLogin: UITextField!
+    @IBOutlet var UcusSignup: UITextField!
+    @IBOutlet var PWcusSignup: UITextField!
+    var culog: String?
+    var cpwlog: String?
+    var cusign: String?
+    var cpwsign: String?
+    
     let realm = try! Realm()
-    var bRev: String?
-    var bResp: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Realm.Configuration.defaultConfiguration.fileURL)
-       
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         // Do any additional setup after loading the view.
     }
     
@@ -54,18 +58,21 @@ class BusReview: UIViewController {
     }
     
     func save() {
-        let businessPost = Data2()
-        businessPost.businessResp = bResp!
-        businessPost.businessRev = bRev!
+        let cusLoginData = CustomerAccount()
+        cusLoginData.customerUserLog = culog!
+        cusLoginData.customerPwLog = cpwlog!
+        cusLoginData.customerUserSign = cusign!
+        cusLoginData.customerPwSign = cpwsign!
         realm.beginWrite()
-        realm.add(businessPost)
+        realm.add(cusLoginData)
         try! realm.commitWrite()
     }
     
-    @IBAction func postTapped(_ sender: UIButton) {
-        bResp = response.text
-        bRev = cusReview.text
+    @IBAction func enterPressed(_ sender: UIButton) {
+        culog = UcusLogin.text
+        cpwlog = PWcusLogin.text
+        cusign = UcusSignup.text
+        cpwsign = PWcusSignup.text
         save()
     }
-    
 }

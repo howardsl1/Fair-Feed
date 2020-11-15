@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2B4EEF3EB95D182A4352BF /* Pods_Thingy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CAA3EBEBC6923D6009F8B8 /* Pods_Thingy.framework */; };
+		E63B30D52546284E009452E5 /* CusLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B30D42546284E009452E5 /* CusLogin.swift */; };
+		E63B30D825462D4C009452E5 /* BusLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B30D725462D4C009452E5 /* BusLogin.swift */; };
+		E63B31342548A241009452E5 /* Disputes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B31332548A241009452E5 /* Disputes.swift */; };
+		E6585772253E2F32007303DD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6585771253E2F32007303DD /* Data.swift */; };
 		E6C4F2FF24F5A15300806FDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4F2FE24F5A15300806FDA /* AppDelegate.swift */; };
 		E6C4F30124F5A15300806FDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4F30024F5A15300806FDA /* SceneDelegate.swift */; };
 		E6C4F30324F5A15300806FDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4F30224F5A15300806FDA /* ViewController.swift */; };
@@ -20,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CC4FECD3CB013A28ECEB710 /* Pods-Thingy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thingy.release.xcconfig"; path = "Target Support Files/Pods-Thingy/Pods-Thingy.release.xcconfig"; sourceTree = "<group>"; };
+		99CAA3EBEBC6923D6009F8B8 /* Pods_Thingy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thingy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E61F5FE12FC24F2F645F5D /* Pods-Thingy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thingy.debug.xcconfig"; path = "Target Support Files/Pods-Thingy/Pods-Thingy.debug.xcconfig"; sourceTree = "<group>"; };
+		E63B30D42546284E009452E5 /* CusLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusLogin.swift; sourceTree = "<group>"; };
+		E63B30D725462D4C009452E5 /* BusLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLogin.swift; sourceTree = "<group>"; };
+		E63B31332548A241009452E5 /* Disputes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disputes.swift; sourceTree = "<group>"; };
+		E6585771253E2F32007303DD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E6C4F2FB24F5A15300806FDA /* Fair Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fair Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4F2FE24F5A15300806FDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C4F30024F5A15300806FDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E2B4EEF3EB95D182A4352BF /* Pods_Thingy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0416C18FEDB49BC3EB574642 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99CAA3EBEBC6923D6009F8B8 /* Pods_Thingy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09E2124086C859DF0BB9F9CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5E61F5FE12FC24F2F645F5D /* Pods-Thingy.debug.xcconfig */,
+				7CC4FECD3CB013A28ECEB710 /* Pods-Thingy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E6C4F2F224F5A15300806FDA = {
 			isa = PBXGroup;
 			children = (
 				E6C4F2FD24F5A15300806FDA /* Thingy */,
 				E6C4F2FC24F5A15300806FDA /* Products */,
+				09E2124086C859DF0BB9F9CE /* Pods */,
+				0416C18FEDB49BC3EB574642 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +100,10 @@
 				E6C4F30024F5A15300806FDA /* SceneDelegate.swift */,
 				E6C4F30224F5A15300806FDA /* ViewController.swift */,
 				E6C4F30424F5A15300806FDA /* Main.storyboard */,
+				E63B31332548A241009452E5 /* Disputes.swift */,
+				E63B30D42546284E009452E5 /* CusLogin.swift */,
+				E63B30D725462D4C009452E5 /* BusLogin.swift */,
+				E6585771253E2F32007303DD /* Data.swift */,
 				E6F603C12520F5A0006DF729 /* BusReview.swift */,
 				E6F603BF2520EBCE006DF729 /* CustReview.swift */,
 				E6F603BD2520EB60006DF729 /* SharedView.swift */,
@@ -86,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C4F30F24F5A15500806FDA /* Build configuration list for PBXNativeTarget "Thingy" */;
 			buildPhases = (
+				A19446AA33AA3918F8E825A2 /* [CP] Check Pods Manifest.lock */,
 				E6C4F2F724F5A15300806FDA /* Sources */,
 				E6C4F2F824F5A15300806FDA /* Frameworks */,
 				E6C4F2F924F5A15300806FDA /* Resources */,
+				78387B9FFB98A3B680A48836 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,15 +184,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78387B9FFB98A3B680A48836 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thingy/Pods-Thingy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thingy/Pods-Thingy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thingy/Pods-Thingy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A19446AA33AA3918F8E825A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thingy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6C4F2F724F5A15300806FDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63B31342548A241009452E5 /* Disputes.swift in Sources */,
+				E6585772253E2F32007303DD /* Data.swift in Sources */,
 				E6C4F30324F5A15300806FDA /* ViewController.swift in Sources */,
 				E6F603C02520EBCE006DF729 /* CustReview.swift in Sources */,
 				E6F603BE2520EB60006DF729 /* SharedView.swift in Sources */,
+				E63B30D825462D4C009452E5 /* BusLogin.swift in Sources */,
 				E6C4F2FF24F5A15300806FDA /* AppDelegate.swift in Sources */,
+				E63B30D52546284E009452E5 /* CusLogin.swift in Sources */,
 				E6F603C22520F5A0006DF729 /* BusReview.swift in Sources */,
 				E6C4F30124F5A15300806FDA /* SceneDelegate.swift in Sources */,
 			);
@@ -298,6 +382,7 @@
 		};
 		E6C4F31024F5A15500806FDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E61F5FE12FC24F2F645F5D /* Pods-Thingy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +401,7 @@
 		};
 		E6C4F31124F5A15500806FDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC4FECD3CB013A28ECEB710 /* Pods-Thingy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
