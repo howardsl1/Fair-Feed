@@ -35,9 +35,9 @@ class SharedView: UIViewController {
         } else {
             save()
         }
-        if busResponse.text.isEmpty && busReview.text.isEmpty && badState == "Bad" {
+        if busResponse.text.isEmpty && busReview.text.isEmpty && state.text == "Bad" {
             
-        } else {
+        } else if state.text == "Bad" && (busResponse != nil) && (busReview != nil) {
             saveNewState()
             displayNewState()
         }

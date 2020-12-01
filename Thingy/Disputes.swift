@@ -12,9 +12,10 @@ import RealmSwift
 class Disputes: UIViewController {
     let realm = try! Realm()
     var disputeState: Bool = false
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         accessData()
         if disputeState == true {
             runAlert()
